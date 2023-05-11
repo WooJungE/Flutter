@@ -41,13 +41,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset : false,
       appBar: AppBar(
 
         title: Text(widget.title),
       ),
-      body: Center(
-
-        child: Column(
+      body: SingleChildScrollView(
 
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
